@@ -28,7 +28,7 @@ if [[ $EUID -ne 0 ]]; then
     echo "$PREFIX This script must be run as root or with sudo privileges"
     exit 1
 fi
-if [ $# -le 3 ]; then
+if [ $# -le 1 ]; then
     echo "Usage: ${0} FolderName DBName [SubFolder]"
     echo "If 'SubFolder' is empty 'www' will be used"
     exit 1
