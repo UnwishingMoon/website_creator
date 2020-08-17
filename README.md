@@ -7,6 +7,8 @@ What this script does:
 - Create associated virtualhost conf file
 - It can create a subfolder
 
+At the end of the script it will prompt the generated **password** for the **Database**
+
 ```
 Usage: filename FolderName DBName [SubFolder]
 If 'SubFolder' is empty 'www' will be used
