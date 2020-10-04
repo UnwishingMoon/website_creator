@@ -88,7 +88,7 @@ a2ensite -q /etc/apache2/sites-available/$vhPrefix$siteFolderName.conf
 echo "$PREFIX Creating database and user.."
 mysql -u root <<_EOF_
 CREATE DATABASE IF NOT EXIST ${dbName};
-CREATE USER IF NOT EXIST '${dbName}'@'localhost' IDENTIFIED BY '${dbSitePass}'
+CREATE USER '${dbName}'@'localhost' IDENTIFIED BY '${dbSitePass}'
 GRANT ALL PRIVILEGES ON ${dbName}.* TO '${dbName}'@'localhost';
 FLUSH PRIVILEGES;
 _EOF_
